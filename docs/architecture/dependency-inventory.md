@@ -2,6 +2,8 @@
 
 來源固定為 `jeffery777/codex-dev-skills@993597561881d6ed8c552f9a18c59315015ad245`。以 tracked files、直接檔案與符號查讀盤點，未使用／刷新 GitNexus。依使用者本次澄清，核心是純 Markdown 契約庫：**任何可執行來源、validator、schema file、installer 或程式套件都不規劃搬入核心。** 對照 [責任邊界](project-split.md) 與 [遷移計畫](migration-plan.md)。
 
+P1 更新：固定來源盤點維持原 scope；逐條抽取／改寫／接口保留見 [source-map](../provenance/source-map.md)，完整原授權見 [upstream-notices](../provenance/upstream-notices.md)。下文「本包」指 P0 來源盤點，Grok 全部延後提案屬歷史，不覆蓋章程的後續順序。現行由指定協調者另包協調 P2、P3-C／P3-G 及受控資格；本 P1 不修改接口或執行 Grok Build。
+
 ## 分類規則與依賴方向
 
 | 分類 | 定義 |

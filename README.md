@@ -1,35 +1,39 @@
 # engineering-workflow-core
 
-純 Markdown 的共用文件契約庫，承載工程工作流、規範、約束、授權邊界、獨立審查、必要安全掃描、exact-head、證據、驗收與停止條件。
+純 Markdown 共用工程契約庫，供接口維護者、交付主代理與 reviewer 讀取工作流、規範、約束、授權、獨立審查、必要安全掃描、exact-head、證據、驗收與停止條件。
 
-**目前是拆分設計草稿。** 本工作包只新增此 README 與三份架構文件，既有 LICENSE 不變；尚未抽離共用契約或改接任何接口。範圍依 [Issue #1](https://github.com/jeffery777/engineering-workflow-core/issues/1) 與使用者本次澄清；後者將核心明定為純文件庫。
+本次 [P1 契約抽取](https://github.com/jeffery777/engineering-workflow-core/issues/3) 新增四份契約、逐條來源對照與完整上游 notices，同步必要設計入口。P0 四文件設計保留於 [PR #2 的固定 merge revision](https://github.com/jeffery777/engineering-workflow-core/tree/0815b74abe52d57efd032bd075e39c83c2ebf0d6)。P1 未改接接口或更新既有安裝，不宣稱兩端已遵循或行為等價。
 
-## 三個 repository 的責任
+## 開始閱讀
 
-| Repository | 責任 | 本包狀態 |
-| --- | --- | --- |
-| [engineering-workflow-core](https://github.com/jeffery777/engineering-workflow-core) | 共用 Markdown 契約與文件來源／版本說明；可描述流程狀態、必要輸入輸出及證據要求 | 四份設計草稿；不承載 executable、runtime API、validator、installer 或程式套件 |
-| [codex-dev-skills](https://github.com/jeffery777/codex-dev-skills) | Codex 技能入口、判定／路由／狀態程式、工具適配、model/effort/profile/session、驗證器、安裝與套件組裝；依固定核心文件契約驗證遵循程度 | 本包唯讀來源；接口準備可由協調者安排，既有程式與安裝未變 |
-| [grok-build-dev-skills](https://github.com/jeffery777/grok-build-dev-skills) | 未來 Grok Build 的對應技能／程式接口、模型與 effort、工具／權限／session、驗證器、安裝與組裝 | 可由協調者與 Codex 同步安排唯讀研究／接口設計；實作與 runtime 資格驗證延後 |
+先讀完整 [工作流](contracts/workflow.md)，每次操作保留 [授權與停止條件](contracts/authorization-and-stops.md)；適用審查／正式交付時讀 [獨立審查與安全掃描](contracts/review-and-security.md)，已有 change request 或宣稱 merge readiness 時讀完整 [exact-head 與證據](contracts/exact-head-and-evidence.md)。缺必要文件或能力不能視為豁免。
 
-依賴方向為兩端接口各自依賴固定核心文件；核心不反向依賴兩端。兩端各自實作 revision/digest、來源與 license notices 的組裝機制，runtime 不追蹤 core `main`。共享 Markdown 不代表工具、隔離或工程行為等價。
+- [逐條來源處置、修改說明與改善契約涵蓋](docs/provenance/source-map.md)
+- [完整上游 MIT notices](docs/provenance/upstream-notices.md)
+- [責任邊界與 P0 官方六面向比較](docs/architecture/project-split.md)
+- [固定來源相依盤點](docs/architecture/dependency-inventory.md)
+- [現行遷移順序、接口前置與驗收](docs/architecture/migration-plan.md)
 
-子代理可以沿用 parent 的 sandbox 與核准模式，不要求每個子代理建立獨立技術隔離。模型與思考深度按任務需求選擇，由各接口核對實際生效的模型、effort 與繼承／覆寫結果；作者與 reviewer 的獨立性、唯讀工作約束及必要審查仍保留。
+正式契約以繁體中文為權威，identifiers／引用原文保留原樣；全面雙語與 ASD-STE100 符合性不在本包聲明範圍。
 
-「評估 codex-dev-skills 專案拆分」協調對話可安排兩個接口同步進行唯讀相依盤點、官方能力研究與接口設計，與核心契約整理並行。核心契約定稿並固定 revision 後，再安排接口實作；目前維持 Codex 行為，Grok runtime 驗證延後。詳見 [並行準備與實作前置](docs/architecture/migration-plan.md#parallel-preparation)。
+## 責任邊界
 
-## 文件入口
+| Repository | 責任 |
+| --- | --- |
+| [engineering-workflow-core](https://github.com/jeffery777/engineering-workflow-core) | 僅 Markdown 契約、來源與授權說明，以及既有 LICENSE；無可執行判定器、router、state machine、runtime API、validator、installer、schema file 或程式套件 |
+| [codex-dev-skills](https://github.com/jeffery777/codex-dev-skills) | Codex 技能入口、程式／工具適配、model/effort/profile/session、資格／驗證器、安裝及套件組裝；本包唯讀，維持既有行為 |
+| [grok-build-dev-skills](https://github.com/jeffery777/grok-build-dev-skills) | 對應 Grok 接口、設定、工具／權限／session、資格／驗證、安裝與組裝；協調者另包安排，本 P1 不修改或執行 Grok Build |
 
-- [責任邊界與官方文件比較](docs/architecture/project-split.md)
-- [來源相依盤點與固定 revision 證據](docs/architecture/dependency-inventory.md)
-- [分階段遷移、驗收與下一個純文件工作包](docs/architecture/migration-plan.md)
+兩接口各自依賴固定核心 Markdown，核心不反向依賴兩端。接口在建置時實作 immutable revision/digest、來源、dependency closure 與 license notices 的固定組裝；runtime 不追蹤 core `main`。共享文件不是動態行為、模型品質、隔離或 runtime 資格證明。
 
-來源盤點固定於 `codex-dev-skills@993597561881d6ed8c552f9a18c59315015ad245`；官方文件查讀日為 2026-10-14。文件記載、設計推論與尚未實測能力分開；歷史 `shared` 標籤或 synthetic fixture 不代表其他 runtime 合格。
+子代理可沿用 parent sandbox／核准模式，不要求逐個獨立技術隔離；按任務選模型與思考深度，各接口核對實際生效與必要資格。作者／reviewer 獨立、唯讀工作約束、主代理整合及完成證據仍保留。
 
-## 操作邊界與來源
+## 當前限制與交付
 
-本包不開始程式搬移，來源專案唯讀。拆分期間不部署、不更新 EdgeInstaller 使用的既有技能、不執行 Grok Build，不啟用 memory/hooks/schedulers，也不操作公司環境或 Orca。Orca 作為可選 host 入口，其操作技能維持上游 ownership。
+P1 只改核心 Markdown，來源固定於 `codex-dev-skills@993597561881d6ed8c552f9a18c59315015ad245`。不搬程式、不修改接口或既有安裝、不部署、不更新 EdgeInstaller 使用的技能、不執行 Grok Build，不啟用 memory/hooks/schedulers，不操作公司環境或 Orca。官方比較是 2026-10-14 的文件證據，非本包 runtime 測試。
 
-Commit、push、PR、merge、平台 comment、tag/Release 與部署由來源協調對話另行核對審查、gate 與授權，本包不執行。核心文件描述契約，不能自行攔截 runtime 操作或授予外部寫入權。
+跨專案協調已由原「評估 codex-dev-skills 專案拆分」交接給指定協調者，由它安排後續工作。P1 writer 只完成本包；章程及明確使用者授權涵蓋的 commit/push/PR/merge，在必要審查、驗證及 gates 成立後續行。Tag/Release、consumer 安裝、部署與其他階段不包含於此授權。
 
-本 repository 採 [MIT LICENSE](LICENSE)。未來抽取／組裝來源文件時，須保留來源 [MIT copyright／permission notice](https://github.com/jeffery777/codex-dev-skills/blob/993597561881d6ed8c552f9a18c59315015ad245/LICENSE#L1-L21) 與 provenance，不能以本 repo 的 LICENSE 取代。
+核心未配置 hosted enforcement profile 或 CI；未執行不得回報 Passed。文件描述契約，不能技術攔截 runtime 或授予外部寫入權。適用專案自行選 overlay 並驗證遵循。
+
+本 repository 採 [MIT LICENSE](LICENSE)，既有 bytes 不變。抽取部分另保留 [原作者完整 MIT notices](docs/provenance/upstream-notices.md)，目的 LICENSE 不能取代來源 notices。

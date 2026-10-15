@@ -1,6 +1,6 @@
 # 純 Markdown 核心責任邊界
 
-本文件定義純 Markdown 核心與兩端接口的責任。它是 [Issue #1](https://github.com/jeffery777/engineering-workflow-core/issues/1) 的設計草稿；來源事實見 [相依盤點](dependency-inventory.md)，後續順序見 [遷移計畫](migration-plan.md)。本包不搬移程式或改接來源。
+本文件定義純 Markdown 核心與兩端接口責任。P0 見 [PR #2 固定 revision](https://github.com/jeffery777/engineering-workflow-core/tree/0815b74abe52d57efd032bd075e39c83c2ebf0d6)；本 [P1 #3](https://github.com/jeffery777/engineering-workflow-core/issues/3) 新增 [契約與來源對照](../provenance/source-map.md)，並依章程更新現行順序，保留 P0 歷史。來源見 [相依盤點](dependency-inventory.md)，前置見 [遷移計畫](migration-plan.md)。本包不搬程式或改接來源。
 
 <a id="official-comparison"></a>
 
@@ -52,9 +52,9 @@
 
 ## 協調與並行準備
 
-「評估 codex-dev-skills 專案拆分」對話統一協調。它可為 Codex 與 Grok 接口安排有界、唯讀的相依盤點、官方能力研究及接口設計，與核心文件整理同步進行；各包明列來源 revision、scope、ownership、假設與未測能力。核心仍由指定 writer 修改本包四份 Markdown，本對話不自行修改或派工至兩個接口專案。
+指定協調者承接原「評估 codex-dev-skills 專案拆分」的跨專案協調，安排有界相依盤點、官方研究及接口設計與核心文件並行；各包列明 revision、scope、ownership、假設與未測能力。本 P1 只新增六份純 Markdown 契約／provenance 並同步必要入口，不修改或派工至接口。
 
-唯讀設計可引用尚未定稿的核心草稿，但須標明草稿版本與假設。核心契約定稿並固定 immutable revision/digest 後，協調者重新核對兩端設計與最終契約，處理漂移，再依工作包授權及適用 gates 安排實作。先維持 Codex 行為；Grok runtime 驗證延後，不藉能力研究執行 Grok Build。
+唯讀設計可引用標版本／假設的草稿。P1 正式合併、固定 immutable revision/digest、兩端 P2 設計皆與最終 Core 契約一致、該包授權成立後，P3-C／P3-G 各自推進；共同前置成立後，不必等對端後續實作整體完成。章程允許協調者另包安排 Grok 同步開發與受控測試；Grok repo 可由 Codex 開發，不推定 Grok worker 合格。本 P1 不執行 Grok Build 或 runtime 資格，Codex 行為／安裝維持，consumer/deploy/tag/Release、EdgeInstaller 技能更新另案。現行前置見 [遷移計畫](migration-plan.md)，P0 全部延後提案保留於歷史 revision。
 
 ## Host、forge 與保留延後項目
 
