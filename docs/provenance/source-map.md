@@ -2,7 +2,7 @@
 
 P1 的固定抽取來源是 `jeffery777/codex-dev-skills@993597561881d6ed8c552f9a18c59315015ad245`；本機來源只讀，未混用 draft #317/#324/#326。目的基線是 P0 merge `0815b74abe52d57efd032bd075e39c83c2ebf0d6`，工作包為 [Issue #3](https://github.com/jeffery777/engineering-workflow-core/issues/3)。核心的正式契約以繁體中文為權威；英文 identifiers 及 notices 原文不翻譯。全面雙語改造另包評估，不在 P1 宣稱 ASD-STE100 符合性。
 
-上述抽取身分與下列逐條對照記錄 P1 當時的來源及處置。P1 之後的使用者新增要求分開記於 [簡明寫作更新](#plain-writing-update)，不倒寫成原上游義務或 P1 當時已完成的符合性驗證。
+上述抽取身分與下列逐條對照記錄 P1 當時的來源及處置。P1 之後的使用者新增要求分開記於 [簡明寫作更新](#plain-writing-update) 與 [證據生命週期更新](#evidence-lifecycle-update)，不倒寫成原上游義務或 P1 當時已完成的符合性驗證。
 
 以下按來源正文段落、每個編號／bullet 與表格義務列出穩定 ID、exact file/lines、disposition、目的章節及理由。標題／空行隨相鄰單位歸類；不是把整份來源都稱中立。`抽取` 保留義務並整理文字；`改寫` 保留共用義務，移除 runtime 具體映射或明示本次澄清；`接口保留` 不複製具體入口／路徑／程式；`不適用` 須有明確理由（本次主要來源沒有需要丟棄的共用義務）。合併文字不等於刪除義務。核心只保留 Markdown，所有可執行依賴留原接口或保留延後。
 
@@ -206,3 +206,13 @@ P1 的固定抽取來源是 `jeffery777/codex-dev-skills@993597561881d6ed8c552f9
 - [ASD 官方 Tools for STE](https://asd-ste100.org/STEsoftware.html) 的搜尋擷取說明工具不能代替作者或標準。本次直接讀取 About STE、FAQ 及 Tools for STE 皆未成功取得內容，不以搜尋擷取冒稱已讀完整頁面。
 
 本次取得的是官方搜尋擷取內容，未取得完整正式標準，不宣稱已讀完整官方頁面、全部規則或詞典。未提交個資申請，未採用未查證的數字規則；完整 ASD-STE100 符合性未驗證。繁中調適與上述驗收方式是使用者接受的共同設計，不是官方中文標準。此更新不更動 P1 上游 license notices，也不重製完整標準。
+
+<a id="evidence-lifecycle-update"></a>
+
+## P1 之後新增：長任務證據生命週期
+
+[Issue #9](https://github.com/jeffery777/engineering-workflow-core/issues/9) 依使用者於 2026-10-16 明確接受的要求，在 [工作流](../../contracts/workflow.md#wf-evidence-lifecycle) 加入現用／已取代／未解分類、替代覆蓋、上下文與來源保存分流，以及安全結案與小型示意。這是新使用者要求，不是 P1 上游抽取；原 107 單位、固定 revision／hash 與完整 notices 不倒寫。前述簡明寫作及官方查核仍是當時的紀錄，本包不重做或升格其符合性證據。
+
+原 [保存及授權條款](../../contracts/authorization-and-stops.md#auth-data) 保留並補明專案 retention、共享／仍引用資料與保護例外；[不可逆刪除](../../contracts/authorization-and-stops.md#auth-destructive) 明定操作當下確認。替代須覆蓋原失敗情境、revision、scope 與 outcome，保留精簡原因／修正／版本／替代引用與實質 review／merge／acceptance 證據。這不把每份 raw log 永久化，也不讓無關 PASS、摘要或缺保留期間成為刪除依據。
+
+README 兩語僅導讀共用預設、有效專案專化與不可弱化的界線。規則及示意供既有執行、review 與結案流程採用，不新增工具、framework、skill、schema、receipt 或 gate；實際接口載入及固定版本由各 consumer 另包處理。此包不執行歷史證據清理、刪除、搬移或歸檔，不修改 consumer、全域設定、安裝或 reflection／automatic entry／router roadmap。
