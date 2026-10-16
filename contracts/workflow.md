@@ -10,14 +10,16 @@
 
 | 階段 | 必要輸入與動作 | 產物與離開條件 |
 | --- | --- | --- |
-| Discover | 讀有效指引、需求、來源與 repo 身分；有 Git 時核對 branch、HEAD、upstream、remotes、完整修改與 ownership；由接口核對當前公開能力／schema／權限 | 目標、scope、DoD、限制、事實／推論／未知；來源衝突先解決 |
-| Plan | 選最小一致切片，指定唯一 writer 或不重疊 ownership、依賴、風險、驗收及 review 強度 | 有界計畫；計畫不授權修改、派工或外寫 |
+| Discover | 讀有效指引、需求、來源與 repo 身分，依目標、設計與預期影響初判任務風險；有 Git 時核對 branch、HEAD、upstream、remotes、完整修改與 ownership；由接口核對當前公開能力／schema／權限 | 目標、scope、DoD、限制、風險及事實／推論／未知；unknown 不默認低風險，來源衝突先解決 |
+| Plan | 選最小一致切片，指定唯一 writer 或不重疊 ownership、依賴、驗收、review 與安全檢查強度／時機；scope 或設計變動重評風險 | 有界計畫；高風險及早深查，不等最終候選；計畫不授權修改、派工或外寫 |
 | Implement | 用已授權能力按既有模式完成切片，保留無關修改 | 可讀回的實際 diff 與新增檔案 |
-| Verify | 主代理獨立讀回成果、受保護 tests 與需求，執行必要固定驗收 | 命令、exit、結果、來源身分、略過／失敗分類；tests 通過不代替 review |
-| Review And Fix | 足夠能力、與作者獨立的 reviewer 唯讀審查當前內容；依風險完成必要 scan | finding IDs、dispositions、修正及重審證據；詳見 [審查契約](review-and-security.md) |
+| Verify | 開發期間持續做快速測試及廉價、適用的安全檢查；主代理獨立讀回成果、受保護 tests 與需求，完成必要驗收 | 命令、exit、結果、來源身分、略過／失敗分類；tests 或快速檢查不代替 review／必要 scan |
+| Review And Fix | 足夠能力、與作者獨立的 reviewer 唯讀審查當前內容；高風險在設計與實作初期即深入審查及安全分析，有實質 diff 即按必要性做比例 scan | finding IDs、dispositions、修正及重審／重測證據；詳見 [審查契約](review-and-security.md) |
 | Docs Sync | 核對行為、需求與限制，依 [簡明寫作要求](#wf-writing) 同步適用文件／狀態 | code/docs/configuration/package/version 一致；保留歷史與未驗證事項；在既有 review 記錄適用寫作要求的抽查 |
 | Delivery Gate | 核對驗證、review、授權與所選專案 overlay；已有 change request 另做完整 exact-head review | 內容 readiness、平台 enforcement、操作授權分列，詳見 [exact-head 契約](exact-head-and-evidence.md) |
 | Continue | 中斷前保存有界 checkpoint，依 [證據生命週期](#wf-evidence-lifecycle) 維護索引；接續先查當前來源、修改與 ownership | 同一目標、唯一 writer、剩餘 DoD、findings、證據與下一步；session 記憶僅為 advisory |
+
+階段是安排指引，不把深入 review 或安全工作鎖在最後。普通流程可先快速檢查，再獨立 review、修正及重驗，形成較穩定候選；必要安全工作可提早或在無相依衝突時並行。高風險先深查，最終固定版本用於證據綁定與 merge 驗收，詳見 [風險、時機與候選規則](review-and-security.md#review-risk-timing)。
 
 <a id="wf-writing"></a>
 
