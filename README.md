@@ -56,7 +56,9 @@ Skills 引導讀取與遵循契約，不創造 API 或平台能力。在既有�
 
 ## 當前限制與交付
 
-本次是獨立的三文件雙語導讀包，不重開 P1。正式契約、provenance、相依盤點、LICENSE 與 consumer pins 不變。兩 consumer 仍固定 P1 revision `b4c37798b6d3a9efd91c8c6d518093f2dd847a98`；本包 Core main 改變不觸發重新 pin、snapshot 更新或 rollout。
+[PR #6](https://github.com/jeffery777/engineering-workflow-core/pull/6) 的三文件雙語導讀包未重開 P1，也未改正式契約、provenance、相依盤點、LICENSE 或 consumer pins。當時兩 consumer 固定 P1 revision `b4c37798b6d3a9efd91c8c6d518093f2dd847a98`；該包 Core main 改變未觸發重新 pin、snapshot 更新或 rollout。
+
+[Issue #7](https://github.com/jeffery777/engineering-workflow-core/issues/7) 將 [簡明寫作要求](contracts/workflow.md#wf-writing) 加入共用工作流，來源與限制見 [更新記錄](docs/provenance/source-map.md#plain-writing-update)。接口採用須另包更新固定文件並驗證；本包不改 consumer 或既有安裝。
 
 本包不搬程式、不修改接口或既有安裝、不部署、不更新 EdgeInstaller 技能、不執行 Grok Build 或模型／runtime 資格測試，不啟用 memory/hooks/schedulers，不操作公司環境、Orca 或 Space，不 tag/Release/install。P1 抽取來源固定 `codex-dev-skills@993597561881d6ed8c552f9a18c59315015ad245`。官方比較是 2026-10-14 文件證據，不能證明當前 runtime 資格、隔離、模型品質、成本或延遲。
 
@@ -64,7 +66,7 @@ Skills 引導讀取與遵循契約，不創造 API 或平台能力。在既有�
 
 本 repository 採 [MIT LICENSE](LICENSE)。抽取內容同時保留 [原作者完整 MIT notices](docs/provenance/upstream-notices.md)，目的 LICENSE 不能取代來源 notices。
 
-正式契約仍以繁體中文為權威；本頁英文供人類導讀，不新增規範或改變契約效力。英文依 [ASD-STE100 Issue 9](https://asd-ste100.org/STE_downloads.html) 原則編寫，尚未完成完整符合性驗證；本包未完成全部規則與詞彙核對。繁體中文不宣稱符合英文受控語言標準。
+正式契約仍以繁體中文為權威；本頁英文供人類導讀，不新增規範或改變契約效力。英文依 [ASD-STE100 Issue 9](https://asd-ste100.org/STE_downloads.html) 原則編寫，尚未完成完整符合性驗證；本頁未完成全部規則與詞彙核對。繁體中文不宣稱符合英文受控語言標準。
 
 </details>
 
@@ -118,7 +120,9 @@ Subagents can inherit the parent sandbox and approval mode. A separate technical
 
 ## Current limits and delivery
 
-This is a separate bilingual-guide package for three files. It does not reopen P1. Formal contracts, provenance, the dependency inventory, LICENSE, and consumer pins stay unchanged. Both consumers remain pinned to P1 revision `b4c37798b6d3a9efd91c8c6d518093f2dd847a98`. A Core main change from this package does not update pins or snapshots, or start a rollout.
+[PR #6](https://github.com/jeffery777/engineering-workflow-core/pull/6) added bilingual guides to three files. It did not reopen P1 or change formal contracts, provenance, the dependency inventory, LICENSE, or consumer pins. At that time, both consumers were pinned to P1 revision `b4c37798b6d3a9efd91c8c6d518093f2dd847a98`. That package did not update pins or snapshots, or start a rollout.
+
+[Issue #7](https://github.com/jeffery777/engineering-workflow-core/issues/7) adds [plain-writing requirements](contracts/workflow.md#wf-writing) to the shared workflow. See the [update record](docs/provenance/source-map.md#plain-writing-update) for the source and limits. Each interface must update its fixed documents and verify them in a separate package before adoption. This package changes no consumer or existing installation.
 
 This package moves no code and changes no interface or existing installation. It does not deploy, update EdgeInstaller skills, run Grok Build or model/runtime qualification tests, enable memory/hooks/schedulers, operate company systems, Orca, or Space, or create a tag/Release or install. P1's extraction source is fixed at `codex-dev-skills@993597561881d6ed8c552f9a18c59315015ad245`. The official comparison records documents read on 2026-10-14. It does not prove current runtime qualification, isolation, model quality, cost, or latency.
 
@@ -126,6 +130,6 @@ The designated coordinator succeeded the original project-split coordination cha
 
 This repository uses the [MIT LICENSE](LICENSE). Extracted content also retains the [complete original MIT notices](docs/provenance/upstream-notices.md). The destination LICENSE does not replace those notices.
 
-Traditional Chinese remains the authoritative language of the formal contracts. This English guide adds no policy and does not change contract authority. The English text is written using [ASD-STE100 Issue 9](https://asd-ste100.org/STE_downloads.html) principles. Full conformance has not been verified. This work has not checked every rule and dictionary entry. The Chinese text does not claim conformance to an English controlled-language standard.
+Traditional Chinese remains the authoritative language of the formal contracts. This English guide adds no policy and does not change contract authority. The English text is written using [ASD-STE100 Issue 9](https://asd-ste100.org/STE_downloads.html) principles. Full conformance has not been verified. This page has not checked every rule and dictionary entry. The Chinese text does not claim conformance to an English controlled-language standard.
 
 </details>
