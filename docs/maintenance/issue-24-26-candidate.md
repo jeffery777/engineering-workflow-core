@@ -45,3 +45,10 @@ Keep every original byte and complete line in order; add only complete sentences
 Codex #361 pins the exact candidate revision, full document/LICENSE inventory, digests, modes, sources, and notices under test paths. Its formal v0.1.1 loader/vendor/installation stays unchanged. Evals separate integrity, actual scenario responses and scoring, and runtime/model identity limits. They cover in-scope fixes, undecided gaps, user-added scope, unrelated safety blockers, unsupported mechanisms, traceable Core duties, and unchanged gates. Record Grok as unverified; Codex or synthetic success cannot replace it.
 
 Core adds no executable package, loader, or validator. Consumer/PR evidence binds the actual candidate SHA and eval results without a self-referential document SHA. No formal merge, tag/Release, install, or formal approval is performed. Written per ASD-STE100 principles; full conformance is not verified.
+
+
+## v0.2.0 採用準備更新／Adoption preparation update
+
+前述 Grok 延後及雙 consumer pending 是原候選準備時的歷史。之後已按使用者決定依 Codex→Grok 完成兩端固定 pin，各一次九案文字 eval 均為9/9；公開結果見 [Codex362](https://github.com/jeffery777/codex-dev-skills/pull/362#issuecomment-6543978313) 與 [Grok37](https://github.com/jeffery777/grok-build-dev-skills/pull/37#issuecomment-6543980433)。本包準備下一 minor 的正式接受，完整條件見 [v0.2.0 記錄](../releases/v0.2.0.md)。四份契約保持原固定候選 bytes，兩端舊 fixture/pin 保留可重現；新版清冊與發行文件另驗。此進度只滿足每端 n=1 的文字候選門檻，不等同已合併、publication、完整 runtime 資格或正式 consumer adoption。
+
+The earlier Grok deferral and pending gate are historical. Sequential Codex then Grok work now pins the same candidate, and each passed one actual nine-case text evaluation. The linked public comments record the results. This packet prepares formal acceptance in the next minor under the v0.2.0 record. Keep the four candidate contracts byte-identical and preserve old consumer fixtures/pins for reproduction; verify new inventory and release documents separately. The limited text gate is met, not merge, publication, full runtime qualification or formal adoption.
