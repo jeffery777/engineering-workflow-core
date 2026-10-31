@@ -7,6 +7,10 @@
 <details open>
 <summary>繁體中文（預設展開）</summary>
 
+## 未發行候選 — #24／#26 需求可追溯性
+
+在 review-findings 與 wf-assumptions-and-options 只新增完整句子，試行 finding 的 requirement_relation／REQ-GAP 與新增機制對應現有需求；嚴重度、disposition、必要安全 blocker、操作授權及其他原文保留。這是隔離修改型候選，不是已接受義務或新版本。Codex 候選 pin／eval 由 #361 處理；Grok 延後於 #36，雙 consumer gate 未滿足前不合併。範圍、英文對照、驗收及逐字保留方式見 [候選記錄](docs/maintenance/issue-24-26-candidate.md)。
+
 ## 版本與記錄方式
 
 Core 的文件版本由本檔已提交的版本條目記錄，採 `vMAJOR.MINOR.PATCH` 命名。Core 與各 consumer 各自管理版本，不要求同步升版。`0.x` 階段的 minor 更新可能調整契約；每次採用仍須審查實際差異。Patch 用於不改變義務的文件修正，也不能取代 consumer 的完整性與遵循驗證。版本號不保證模型、工具、接口或 runtime 相容。
@@ -50,6 +54,10 @@ Core 的文件版本由本檔已提交的版本條目記錄，採 `vMAJOR.MINOR.
 
 <details>
 <summary>English (expand to read)</summary>
+
+## Unreleased candidate — #24/#26 requirement traceability
+
+Add complete sentences to review-findings and wf-assumptions-and-options for requirement_relation/REQ-GAP and tracing new mechanisms to existing requirements. Preserve original severity, dispositions, safety blockers, authority, and all original text. This isolated modifying candidate is neither accepted policy nor a new version. Codex #361 handles candidate pin/evals; Grok #36 is deferred. Do not merge before the dual-consumer gate passes. See the [candidate record](docs/maintenance/issue-24-26-candidate.md) for scope, English wording, acceptance, and byte-preservation checks.
 
 ## Versions and records
 
