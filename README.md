@@ -165,3 +165,6 @@ This repository uses the [MIT LICENSE](LICENSE). Extracted content also retains 
 Traditional Chinese remains the authoritative language of the formal contracts. This English guide adds no policy and does not change contract authority. The English text is written using [ASD-STE100 Issue 9](https://asd-ste100.org/STE_downloads.html) principles. Full conformance has not been verified. This page has not checked every rule and dictionary entry. The Chinese text does not claim conformance to an English controlled-language standard.
 
 </details>
+
+
+伴讀維護頁的原逐字重跑命令只適用固定 PR28 伴讀 tree；v0.2.0 的修改候選改用 [三基準逐字保留重跑命令](docs/releases/v0.2.0.md#preservation-reproduction)，分開檢查插入保留與已評估契約 equality。The companion packet's original reproduction command applies only to its fixed PR28 tree. Use the v0.2.0 three-baseline command for the modifying packet, separating insert-only preservation from evaluated-contract equality.

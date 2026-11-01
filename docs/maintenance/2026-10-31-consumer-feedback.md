@@ -71,6 +71,10 @@ The command below is an offline reproduction example, not a new Core product val
 
 在 Core checkout 根目錄，以既有 Python 3 執行；不安裝套件。Run from the Core checkout root with an existing Python 3. No dependency installation is needed. All comparisons use raw bytes without normalization. The in-memory negative cases create no files.
 
+本節原始命令只適用於固定伴讀 tree `709454e96c1b41362fe8840dc4e4dbc8d4fe2cf8`，其四契約應與 v0.1.1 equality。本版合法的 #24／#26 增句會使該 equality 檢查失敗；請改用 [v0.2.0 三基準重跑命令](../releases/v0.2.0.md#preservation-reproduction)。保留本段原命令作為歷史重現，不拿它驗新版。
+
+The original command below applies only to companion tree `709454e96c1b41362fe8840dc4e4dbc8d4fe2cf8`, whose contracts equal v0.1.1. The lawful #24/#26 additions fail that historical equality check. Use the linked v0.2.0 three-baseline command for the new packet; retain this command unchanged for historical reproduction.
+
 ```python
 import hashlib
 import os
@@ -146,3 +150,10 @@ for row in filter(None, rows):
 print("PASS", checked, "baseline files;", exact, "protected exact;",
       len(positive), "positive;", len(negative) + 3, "negative cases")
 ```
+
+
+## 後續接受準備／Later acceptance preparation
+
+本頁前述未實作／未驗證及 Grok 延後狀態保留為初始伴讀工作包的點時歷史。後續 #24／#26 固定候選已由 Codex 及 Grok 各 pin 並完成一次九案文字 eval，各9/9；[v0.2.0 準備紀錄](../releases/v0.2.0.md) 定義本次正式接受草案、完整二十檔清冊與待出版身分的 consumer adoption。#25／#27／#21／#22 的選用伴讀維持非權威；原表其餘修改型未採納部分繼續 pending，沒有由這九案涵蓋。完整 runtime、正式 publication、loader／安裝及所有操作授權仍分開驗證。
+
+Earlier unimplemented/unverified and Grok-deferred statements describe the initial companion packet. Later, both consumers pinned the #24/#26 candidate and passed one nine-case text evaluation each. The v0.2.0 record defines this formal-acceptance draft, twenty-file inventory and publication-dependent adoption work. Optional companions remain non-authoritative; all other modifying proposals in the original table remain pending and are not covered by these nine cases. Full runtime qualification, publication, loaders/installations and action authority remain separate.

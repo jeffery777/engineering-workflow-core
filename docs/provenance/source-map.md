@@ -285,6 +285,12 @@ Under user approval, [Issue #19](https://github.com/jeffery777/engineering-workf
 
 “Prefer” is a preference. Manual checkpoint fallback, valid authority, stops, and required review and gates remain. The wording does not guarantee session restoration, cross-tool deduplication, or automatic runtime recovery. It grants no new delegation right. The English guide preserves the Chinese meaning. Traditional Chinese remains authoritative; full ASD-STE100 conformance remains unverified. The [v0.1.1 preparation record](../releases/v0.1.1.md) records the five-file scope, inventory, and later consumer adoption conditions. Retain original source revisions, hashes and notices, earlier packet history, and v0.1.0 release documents.
 
+## 2026-10-31 #24／#26 隔離修改候選／Isolated modifying candidate
+
+本候選依使用者的候選準備授權，評估 Claude 在 [固定 core-feedback.md@071c1a7](https://github.com/jeffery777/claude-dev-skills/blob/071c1a7ff1f2ce67a605d54ce5c3e85480852b69/docs/core-feedback.md) CF-004／006 提出的 finding 需求關係及機制擴張問題。新增句子是本包的接口無關設計，不是原 107 單位、不是 P1 原文，也不移植 Claude 的整套規則。只在 review-findings 與 wf-assumptions-and-options 增句，全部舊字、原 notices 及 LICENSE 保留。英文對照、來源及 pending 門檻見 [候選記錄](../maintenance/issue-24-26-candidate.md)。Codex #361 評估本候選；Grok #36 延後，原雙 consumer gate 未滿足前不接受正式義務或合併。
+
+Under the user's candidate-preparation authority, this packet evaluates the interface-neutral requirement-relation and mechanism-scope problems in fixed Claude CF-004/006. Its added sentences are a new design, not original extraction units, P1 wording, or a copy of the full Claude rule set. Add sentences only to review-findings and wf-assumptions-and-options; retain all old text, original notices, and LICENSE. The candidate record supplies English meaning, sources, and pending gates. Codex #361 evaluates the candidate; Grok #36 is deferred. No formal acceptance or merge before the original dual-consumer gate passes.
+
 <a id="consumer-feedback-companions"></a>
 
 ## 2026-10-31 使用端回饋伴讀／Consumer feedback companions
@@ -298,3 +304,10 @@ Under user approval, [Issue #19](https://github.com/jeffery777/engineering-workf
 The user requested assessment in the stated order, using the fixed Claude feedback, actual Issue supplements, and the additive-only lesson of Claude #91. The decision card adapts the fixed source with the digest above into an optional, interface-neutral bilingual template. The reading companion draws on CF-007/008/009; review decisions and public formats draw on CF-001 point 4 and CF-002. The original 107 units and historical sources remain unchanged. The added source has a complete MIT notice.
 
 This packet preserves the bytes of all four formal contracts and LICENSE. Existing README, CHANGELOG, source-map, and notice text is retained, with new paragraphs inserted. The maintenance packet records assessments, baseline, and reproducible checks. This packet accepts no modifying rules and changes no consumer pin, installation, or publication. New companions change inventory and dependency closure; the old set digest does not cover them. Consumer adoption still needs a fixed revision, inventory, digests, notices, and its own checks. Full ASD-STE100 conformance has not been verified.
+
+
+## v0.2.0 需求追溯接受準備／Requirement traceability acceptance preparation
+
+本工作包依既有七案維護範圍整合 PR28 的選用伴讀及 PR29 的 #24／#26 修改候選，新增 [v0.2.0 準備紀錄](../releases/v0.2.0.md)。候選四契約原始 bytes、v0.1.1／PR28／PR29 的原字行序及 modes，以及 LICENSE／完整 notices 均保留；新增記錄不是原107單位，也不改先前來源與授權。兩端各一次九案9/9的公開結果綁定原候選，重用僅限逐 byte 相同的四契約；新發行文件／清冊及接口遷移另驗。準備資料分開記 reviewed head、文件集合身分與未知 publication revision/tag object，不能把前者標為後者。
+
+This packet integrates PR28's optional companions and PR29's #24/#26 candidate within the seven-Issue maintenance scope, adding the v0.2.0 preparation record. Preserve candidate-contract bytes, original text/line order/modes from v0.1.1, PR28 and PR29, LICENSE and complete notices. Added records are not the original107 units and do not rewrite earlier source or authority. Each consumer's one nine-case success binds the original candidate; reuse covers only the byte-identical four contracts. Verify new release documents, inventory and migration separately. Preparation distinguishes the reviewed head/set identity from unknown publication revision/tag object.
