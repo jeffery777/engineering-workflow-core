@@ -2,6 +2,20 @@
 
 ## 繁體中文
 
+### v3 結果與 draft 修改候選階段
+
+Codex [#364](https://github.com/jeffery777/codex-dev-skills/pull/364) 先完成新 pin、一次 v3 機械及獨立理由 12/12，再接續 Grok [#39](https://github.com/jeffery777/grok-build-dev-skills/pull/39) 自己的新 pin／原生回應與逐案理由 12/12。兩端相同 protocol、相同 prompt、相同十二案／expected，各 n=1；只滿足本包兩句提案的有限文字門檻，不證明品質提升、完整 runtime 或其他未測義務。v1／v2 的 Grok 各 11/12、一次逾時及歧義皆保留，不重貼標籤或追改分數。
+
+現於 wf-verification 插入與下方引文完全相同的 382-byte 原字文字及一個段落換行，準備 [v0.3.0 draft](../releases/v0.3.0.md)。預期 workflow raw SHA-256 為 `5ddb9220413e2d778e06286e98c8e314b600736ac8d67622ef7395dac1c69179`；只移除本次插入即完整還原基準。其餘三契約、LICENSE、完整 notices 保持 equality。下方「四契約未改」「尚未接受」「不向契約加入」等段落記的是較早非權威測試階段；正式 main 的採納與 publication 仍未完成，普通 consumer loader／vendor／已安裝技能維持原來源。候選清冊新增 v0.3.0 文件，共二十三檔；新清冊／digest／引用由本階段另驗。
+
+### 使用者確認的範圍校正
+
+本次維護保障 Agent／workflow 本身正常遵循、授權、驗證、交接與誤操作／流程失效防護。先前「全部通道」「所有發送路徑」等限制證據宣稱的字句完整保留，但不把抵抗主機／repo 管理員蓄意篡改可信程式、設定或所有證據列為完成條件；這不是宣稱技術能力增加，也不免除任何既有強制安全規則。
+
+#27 的十點與反例可獨立交付，不需先定義跨接口通用分類、全主機副作用等級或所有政策總排序；實際任務遇到衝突才依有效來源處理。#23 聚焦選定 reviewer 正常可呼叫、涉及受保護資源的直接及實際暴露 shell／broker 通道；現有 schema 若不能滿足必要限制，誠實記不支援並停止相依候選採用，不據此封鎖無相依的既有 review 工作。#22 聚焦技能支援的當次 payload／metadata／目的地、變更後重查與結果讀回；現有保存／授權義務不變，新增強制 adapter gate 仍須獨立有界設計及雙端證據，不要求全平台或所有秘密形式的完整防禦。
+
+#21 的 v3 只對一案原題幹追加使用者批准的既有義務遺漏澄清，十二案 expected、其餘十一案及通過門檻不改；仍先取得 fresh Codex 再 Grok 的實際答案。v1／v2 失敗、逾時與歧義保留，不以範圍校正追改分數或先轉寫為已驗證案例。下方表格的未定通用方案是原評估歷史，不再把無界方案當成本輪伴讀交付前提；具體任務必要的能力缺口仍明列。
+
 本包依 #27 → #21 → #23 → #22 接續，不重開已結案 #25／#24／#26。基準為 Core v0.2.0 `6887bfe6183465e9a9e6ccb4ccd7305a58b37302`、Codex v0.36.0 `aad6d4cce65ea50f6ade13aa1a524873bb0c6b54`、Grok v0.3.0 `d58f5e927b4d6048b9f1d09ab75279086847772b`。各 Issue 全文、全部實際留言及 [固定背景](https://github.com/jeffery777/claude-dev-skills/blob/071c1a7ff1f2ce67a605d54ce5c3e85480852b69/docs/core-feedback.md) 已納入評估；#23 沒有虛構的 2026-10-30 留言。先前 [七案評估](2026-10-31-consumer-feedback.md) 保留歷史。
 
 這是非權威提案／評估資料。四份正式契約全部保留原 bytes；下方文字不生效、不覆蓋原文，也不證明修改型門檻已通過。完成 Codex、Grok 新候選 pin／eval 前，不向權威契約加入提案句子。[案例伴讀](../companion/remaining-feedback-cases.md) 只提供選用說明。
@@ -36,6 +50,20 @@
 實際 review 證據另外綁定 exact head、完整 base-to-head 範圍、適用 checks、scan 及真實平台狀態。Core 未配置 CI 不記 PASS。公開只含候選、範圍、結果、限制與待辦；詳細執行資料留受控證據。未執行記 NOT_RUN。沒有 merge／formal approval／發行／安裝授權；本包不修改登入、Reason 或持久安全設定，不啟動無關功能。保留 MIT LICENSE 與完整 notices；依 ASD-STE100 原則編寫，尚未完成完整符合性驗證。
 
 ## English
+
+### V3 results and modifying-draft stage
+
+Codex #364 completed its own fresh pin, one v3 mechanical12/12 and independent reasoning review before Grok #39 independently did the same. Matching protocol/prompt/twelve cases/expected values, n=1 each, meet only this packet's limited two-sentence text gate. They prove no quality improvement, full runtime qualification or untested duties. Retain both Grok11/12 histories, timeout and ambiguity without relabeling or rescoring.
+
+The draft now inserts the exact382-byte quotation below plus one paragraph newline into wf-verification and prepares v0.3.0. Expected workflow rawSHA256 is5ddb9220413e2d778e06286e98c8e314b600736ac8d67622ef7395dac1c69179; removing only that insertion restores the complete baseline. The other three contracts/LICENSE/full notices remain exact. Earlier four-unchanged-contract/unaccepted/no-insertion statements describe the prior inactive-test stage. Formal main adoption/publication remains incomplete; ordinary consumer loaders/vendors and installations retain their prior sources. Add the v0.3.0 record for23totalfiles and verify the new inventory/digests/references separately.
+
+### User-confirmed scope calibration
+
+Protect normal agent/workflow compliance, authority, verification, handoff and prevention of agent mistakes/process failures. Preserve earlier evidence-limit statements about all channels/send paths, while excluding resistance to privileged intentional rewriting of trusted code/settings/all evidence as a completion condition. This adds no technical capability and waives no existing mandatory safety rule.
+
+Deliver #27's guide/cases without a universal taxonomy, whole-host side-effect tier or total policy ordering; resolve actual conflicts against effective sources. Scope #23 to the selected review interface's normal callable direct and exposed shell/broker operations on protected resources. Unsupported necessary restriction blocks dependent candidate adoption, not unrelated existing review. Scope #22 to supported payload/metadata/destination, rechecking changes and reading back results. A new mandatory adapter gate still needs separate bounded design and both consumers' evidence; complete defense across every platform/secret type is not required. Keep current authority and retention duties.
+
+V3 appends the approved existing-obligation clarification to one #21 situation, preserving all twelve expected objects, the other eleven cases and threshold. Obtain fresh Codex then Grok answers; retain v1/v2 failures/timeout/ambiguity without rescoring or premature verified examples. Undecided universal designs below retain assessment history; they are not unbounded prerequisites for this companion delivery. Keep concrete task-required capability gaps explicit.
 
 This non-authoritative packet continues #27, #21, #23, #22 from the three exact released baselines above. It does not reopen completed Issues. Assessment includes all actual comments and fixed Claude feedback; no October 30 comment is invented for #23. Earlier records remain historical. All four contracts retain their original bytes. Proposal text has no effect and does not override them. Complete fresh Codex then Grok pins/evaluations before considering an authoritative addition.
 

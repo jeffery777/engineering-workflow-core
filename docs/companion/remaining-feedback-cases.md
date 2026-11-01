@@ -2,9 +2,13 @@
 
 ## 繁體中文
 
+本包驗收聚焦 Agent 與技能所支援的正常工作流程，以及當次任務實際使用的工具、資料與權限邊界；不以抵抗有管理權者蓄意修改可信程式、設定或證據為完成條件。既有必要授權、驗證、交接、保存及相依停止條件仍保留。下方完整反例保留；涉及顯示轉換或故意改設定的資料，是有限測試資料與證據宣稱界線，不是要求先資格化整個主機或防止所有人為惡意操作。
+
 本文件供 consumer 維護者與 reviewer 選用，補充 [讀取伴讀](core-reading-guide.md) 及 [決策／遮蔽格式](review-decisions.md)。這些是合成情境，不是模型結果、實際事件、新契約或權限機制。正式契約與有效較高優先指令仍優先。未定義務及 #21 的非權威提案見 [工作包](../maintenance/2026-11-01-remaining-feedback.md)。
 
 ### #27：反例不能變成豁免
+
+本輪不以完成跨接口通用分類、全主機副作用分級或所有保護要求的總排序為交付前提；當次實際衝突仍依有效來源核對，不能據此自行豁免。
 
 | 情境 | 可支持的判讀及界線 |
 | --- | --- |
@@ -29,11 +33,15 @@ Core-only MUST-FIX 會排除有效專案需求，本包不選它。必要需求�
 
 ### #23：控制與證據的範圍相同
 
+此處的通道範圍，是選定 reviewer 在當次正常介面中實際可呼叫且涉及受保護資源的操作；不要求證明敵對主機或管理員無法篡改限制。角色唯讀不等於技術禁止，缺任務必要的限制或證據仍如實記錄並停止相依操作。有限驗收可核對同一自有 fixture 的可讀、所需禁止的直接寫入，以及該介面實際暴露的 shell／broker 寫入；不新增全 OS sandbox 或未使用通道的全面資格 gate。
+
 Brief 寫「唯讀」或 reviewer 沒回報寫入，不等於撤除寫入能力。移除 Edit／Write 卻保留 shell 或其他 broker，不證明全部通道受控。某子程序的寫入 probe 被拒絕，也不資格化模型、其他程序、MCP、網路或任意檔案。正反 probe 只支持其實際路徑、工具、程序、版本與前提。
 
 現行 Core 允許沿用 parent sandbox。任務若明定技術唯讀，缺有效證據便停止相依操作，不能靠 prompt 或「沒看到副作用」通過。#23 要求必要獨立 review 不採用仍有寫入工具的替代 reviewer，這不等同要求每個代理另建 OS sandbox；最低工具限制及有效寫入能力範圍仍未採納。現有原生子代理 schema 沒有逐子代理工具 allowlist；共用 sandbox 也不能單獨證明其他限制方式不可行。可在自有合成 fixture 記錄允許／拒絕及不可用／NOT_RUN，不為取得 PASS 放寬權限。本說明不修改設定或宣稱 runtime qualification。
 
 ### #22：先定義要公開的 payload
+
+公開檢查限定於技能支援的當次操作、可取得的實際 payload、metadata 與目的地；payload 或目標改變須重查。未支援或不可觀察的部分保留限制，不宣稱全面偵測或全平台防繞過。正常流程的有界正反例應區分相同 payload／目標的可追溯讀回、檢查後變更而未重查、漏查該操作支援的 metadata，以及讀取失敗仍報 clean；不需先防止管理員繞過技能直接發送。
 
 下表是選用人工範圍，不是每次動作都跑完整 Security Diff Scan 的新規則或完整 secret detector。既有敏感資料與必要 scan 義務保留。
 
@@ -51,6 +59,10 @@ Brief 寫「唯讀」或 reviewer 沒回報寫入，不等於撤除寫入能力�
 案例依四個 Issue 全文及固定 Claude CF-001／002／003／009 設計，不是上游已驗證結果。契約繁中權威；依 ASD-STE100 原則編寫，尚未完成完整符合性驗證。
 
 ## English
+
+This packet evaluates normal supported agent/skill workflows and the tools, data and authority boundaries actually used by the task. It does not require resistance to a privileged person intentionally changing trusted code, settings or evidence. Retain necessary authority, verification, handoff, retention and dependent stops. Existing synthetic display/configuration examples limit evidence claims; they do not require whole-host qualification or prevention of all malicious human behavior.
+
+For #27, delivery needs no universal consumer-state taxonomy, host-wide side-effect tier or total policy ordering. Check actual conflicts against effective sources without granting a waiver. For #23, scope channels to operations actually callable through the selected review interface that affect the protected task resources. Role instructions are not technical prevention. Verify required controls or report the unsupported path and stop dependent adoption. Owned-fixture read/direct-write and actually exposed shell/broker branches are a finite acceptance target, not a new full-OS or unused-channel qualification gate. For #22, check the supported operation's observable payload/metadata and actual destination, rechecking changed payloads/targets. Retain unobservable limits without claiming complete detection or whole-platform anti-bypass. Test normal matching readback, stale post-check changes, omitted supported metadata and failed reads reported clean; privileged bypass outside the skill is not a completion prerequisite.
 
 This optional casebook supplements the linked reading and decision/masking guides for maintainers and reviewers. Cases are synthetic, not model results, real incidents, contracts or permission controls. Formal contracts and effective higher-priority instructions govern. The maintenance packet records undecided obligations and the non-authoritative #21 proposal.
 
