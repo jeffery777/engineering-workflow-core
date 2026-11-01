@@ -7,6 +7,10 @@
 <details open>
 <summary>繁體中文（預設展開）</summary>
 
+## 未發行 — 使用端回饋伴讀
+
+新增 #25 決策卡、#27 十點讀取伴讀與階段索引、#21 決策選項及 #22 公開記錄遮蔽格式。這些是選用非權威說明；四份正式契約保留原始 bytes。七項順序評估與修改型候選門檻見 [維護工作包](docs/maintenance/2026-10-31-consumer-feedback.md)。本條不建立新版本、tag 或 Release，也不表示 consumer 已 pin／eval、已安裝或兩端行為等價。
+
 ## 版本與記錄方式
 
 Core 的文件版本由本檔已提交的版本條目記錄，採 `vMAJOR.MINOR.PATCH` 命名。Core 與各 consumer 各自管理版本，不要求同步升版。`0.x` 階段的 minor 更新可能調整契約；每次採用仍須審查實際差異。Patch 用於不改變義務的文件修正，也不能取代 consumer 的完整性與遵循驗證。版本號不保證模型、工具、接口或 runtime 相容。
@@ -50,6 +54,10 @@ Core 的文件版本由本檔已提交的版本條目記錄，採 `vMAJOR.MINOR.
 
 <details>
 <summary>English (expand to read)</summary>
+
+## Unreleased — Consumer feedback companions
+
+Add optional, non-authoritative decision cards (#25), ten reading notes and a stage map (#27), decision options (#21), and public-record masking formats (#22). The four formal contracts retain their original bytes. See the [maintenance packet](docs/maintenance/2026-10-31-consumer-feedback.md) for the ordered assessment and modifying-candidate gates. This entry creates no version, tag, or Release and proves no consumer pin, eval, installation, or runtime equivalence.
 
 ## Versions and records
 

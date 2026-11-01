@@ -23,6 +23,8 @@ GitHub disclosure sections are independent. Traditional Chinese is open by defau
 
 ## 開始閱讀
 
+選用的 [決策卡片](docs/companion/decision-cards.md)、[Core 讀取伴讀](docs/companion/core-reading-guide.md) 與 [審查決策／公開記錄格式](docs/companion/review-decisions.md) 提供非權威導讀；它們不改四份契約或 consumer 義務。七項回饋的順序評估、候選門檻與逐字保留重跑命令見 [維護工作包](docs/maintenance/2026-10-31-consumer-feedback.md)。
+
 1. 讀完整 [工作流](contracts/workflow.md)，確認工程階段與必要產物。完成標準也稱 Definition of Done（DoD）。
 2. 每次操作都保留 [授權與停止條件](contracts/authorization-and-stops.md)。讀過文件或通過測試，不會自動取得寫入權。
 3. 需要審查或正式交付時，讀 [獨立審查與安全掃描](contracts/review-and-security.md)。
@@ -100,6 +102,8 @@ Engineering teams need shared delivery requirements. These include who can chang
 Suppose you must assign implementation and review for a change. Read the shared workflow first. Confirm the scope and completion criteria. The interface then selects available tools, assigns an independent reviewer, and keeps verification and review evidence. The documents define the required outcomes. The interface performs actions and checks qualification.
 
 ## Start here
+
+Optional [decision cards](docs/companion/decision-cards.md), the [Core reading companion](docs/companion/core-reading-guide.md), and [review decisions/public-record formats](docs/companion/review-decisions.md) provide non-authoritative guidance. They change neither the four contracts nor consumer obligations. See the [maintenance packet](docs/maintenance/2026-10-31-consumer-feedback.md) for the ordered seven-item assessment, candidate gates, and reproducible preservation check.
 
 1. Read the complete [workflow](contracts/workflow.md). Confirm the stages and required outputs. Definition of Done (DoD) means the completion criteria.
 2. Keep the [authorization and stop conditions](contracts/authorization-and-stops.md) for every action. Reading a document or passing a test does not grant write authority.
