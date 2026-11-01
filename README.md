@@ -23,6 +23,8 @@ GitHub disclosure sections are independent. Traditional Chinese is open by defau
 
 ## 開始閱讀
 
+剩餘 #27 → #21 → #23 → #22 的具體反例見 [回饋判讀案例](docs/companion/remaining-feedback-cases.md)；[接續工作包](docs/maintenance/2026-11-01-remaining-feedback.md) 區分既有義務、未採納提案與兩句待測文字。它們均非權威文件，四份契約未修改，不代表新候選已通過 consumer eval 或已接受。
+
 選用的 [決策卡片](docs/companion/decision-cards.md)、[Core 讀取伴讀](docs/companion/core-reading-guide.md) 與 [審查決策／公開記錄格式](docs/companion/review-decisions.md) 提供非權威導讀；它們不改四份契約或 consumer 義務。七項回饋的順序評估、候選門檻與逐字保留重跑命令見 [維護工作包](docs/maintenance/2026-10-31-consumer-feedback.md)。
 
 1. 讀完整 [工作流](contracts/workflow.md)，確認工程階段與必要產物。完成標準也稱 Definition of Done（DoD）。
@@ -102,6 +104,8 @@ Engineering teams need shared delivery requirements. These include who can chang
 Suppose you must assign implementation and review for a change. Read the shared workflow first. Confirm the scope and completion criteria. The interface then selects available tools, assigns an independent reviewer, and keeps verification and review evidence. The documents define the required outcomes. The interface performs actions and checks qualification.
 
 ## Start here
+
+The optional [feedback cases](docs/companion/remaining-feedback-cases.md) and [continuation packet](docs/maintenance/2026-11-01-remaining-feedback.md) distinguish existing duties, unadopted proposals and two sentences of evaluation data for #27, #21, #23 and #22. They are non-authoritative. The four contracts are unchanged; no new consumer evaluation or acceptance is implied.
 
 Optional [decision cards](docs/companion/decision-cards.md), the [Core reading companion](docs/companion/core-reading-guide.md), and [review decisions/public-record formats](docs/companion/review-decisions.md) provide non-authoritative guidance. They change neither the four contracts nor consumer obligations. See the [maintenance packet](docs/maintenance/2026-10-31-consumer-feedback.md) for the ordered seven-item assessment, candidate gates, and reproducible preservation check.
 

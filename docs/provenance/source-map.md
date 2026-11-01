@@ -1,5 +1,7 @@
 # 契約來源與逐條處置
 
+2026-11-01 的 [剩餘工作包](../maintenance/2026-11-01-remaining-feedback.md) 依同一固定 Claude CF-001／002／003／009 與 #27／#21／#23／#22 的實際完整討論新增 [合成案例](../companion/remaining-feedback-cases.md)。#21 窄版文字是本次非權威提案，不是原 107 單位、P1 原文或已生效義務；四份 contracts、LICENSE 與完整 notices bytes 不變。新增來源仍適用下方既有 Claude notice，不另宣稱模型測試或 runtime 資格。This continuation adds synthetic cases and non-authoritative proposal data from the same fixed feedback and full Issue discussions. It changes no contract, original extraction unit, LICENSE or notice, and proves no model result or runtime qualification.
+
 P1 的固定抽取來源是 `jeffery777/codex-dev-skills@993597561881d6ed8c552f9a18c59315015ad245`；本機來源只讀，未混用 draft #317/#324/#326。目的基線是 P0 merge `0815b74abe52d57efd032bd075e39c83c2ebf0d6`，工作包為 [Issue #3](https://github.com/jeffery777/engineering-workflow-core/issues/3)。核心的正式契約以繁體中文為權威；英文 identifiers 及 notices 原文不翻譯。全面雙語改造另包評估，不在 P1 宣稱 ASD-STE100 符合性。
 
 上述抽取身分與下列逐條對照記錄 P1 當時的來源及處置。P1 之後的使用者新增要求分開記於 [簡明寫作更新](#plain-writing-update)、[證據生命週期更新](#evidence-lifecycle-update)、[風險與審查時機更新](#risk-review-update)、[安全檢查政策更新](#security-policy-update) 、[前提與改善取捨更新](#assumptions-options-update)、[首版發行文件更新](#release-version-docs-update) 與 [最小接續規則澄清](#task-continuation-update)，不倒寫成原上游義務或 P1 當時已完成的符合性驗證。

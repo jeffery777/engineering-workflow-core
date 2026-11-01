@@ -7,6 +7,10 @@
 <details open>
 <summary>繁體中文（預設展開）</summary>
 
+## 尚未選版 — 剩餘回饋評估資料
+
+新增 #27／#21／#23／#22 的具體案例及順序工作包，保留四份正式契約與全部舊字。#21 兩句窄版提案只作非權威待測資料，須先 Codex 再 Grok 各自 pin／eval，尚未接受。其他擴張的最低閱讀、severity、停工、紀錄位置、技術隔離或強制公開掃描未採納；不建立新發行或更新安裝。
+
 ## v0.2.0 — 需求追溯與伴讀準備紀錄
 
 本 minor 準備正式採納 #24 的 requirement_relation／REQ-GAP 與 #26 的機制需求追溯，並整合 PR28 的非權威伴讀。四契約保持已通過兩端九案文字 eval 的固定候選 bytes；每端 n=1 的有限文字門檻已滿足，正式接受、publication 與 consumer adoption 分別核對。清冊、原文保留、版本／相依與未完成事項見 [v0.2.0 準備紀錄](docs/releases/v0.2.0.md)。下列隔離候選及先前工作包條目保留為點時歷史，不由後續結果改寫。
@@ -62,6 +66,10 @@ Core 的文件版本由本檔已提交的版本條目記錄，採 `vMAJOR.MINOR.
 
 <details>
 <summary>English (expand to read)</summary>
+
+## Unversioned — Remaining feedback evaluation data
+
+Add concrete cases and an ordered packet for #27/#21/#23/#22, preserving all four contracts and old text. The two-sentence #21 proposal is non-authoritative test data only. It needs fresh Codex then Grok pins/evaluations before acceptance. No broader reading, severity, stopping, record-location, isolation or mandatory-publication-scan duties, new publication or installed update are adopted.
 
 ## v0.2.0 — Requirement traceability and companion preparation
 
