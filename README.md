@@ -23,6 +23,8 @@ GitHub disclosure sections are independent. Traditional Chinese is open by defau
 
 ## 開始閱讀
 
+本輪 #23／#22 的[接續評估](docs/maintenance/2026-11-04-issue-22-23-followup.md)與[新增伴讀](docs/companion/remaining-feedback-cases.md#followup-22-23)區分既有 Core 義務、Codex #370／#368 的有限交付及尚未採納的共用門檻，並列後續驗收與 Grok pending 相依；四份權威契約保持原 bytes。
+
 緊接的首段保留較早伴讀／未生效測試階段；其中「四份契約未修改」不是後續候選的 bytes 聲明。目前 [v0.3.0 draft](docs/releases/v0.3.0.md) 在雙端有限文字門檻後只向 workflow 新增兩句，尚未正式採納或更新 consumer；選用伴讀本身仍非權威。
 
 剩餘 #27 → #21 → #23 → #22 的具體反例見 [回饋判讀案例](docs/companion/remaining-feedback-cases.md)；[接續工作包](docs/maintenance/2026-11-01-remaining-feedback.md) 區分既有義務、未採納提案與兩句待測文字。它們均非權威文件，四份契約未修改，不代表新候選已通過 consumer eval 或已接受。
@@ -108,6 +110,8 @@ Engineering teams need shared delivery requirements. These include who can chang
 Suppose you must assign implementation and review for a change. Read the shared workflow first. Confirm the scope and completion criteria. The interface then selects available tools, assigns an independent reviewer, and keeps verification and review evidence. The documents define the required outcomes. The interface performs actions and checks qualification.
 
 ## Start here
+
+The [#23/#22 follow-up](docs/maintenance/2026-11-04-issue-22-23-followup.md) and [added optional guide](docs/companion/remaining-feedback-cases.md#followup-22-23) distinguish existing Core duties, bounded Codex #370/#368 delivery and unadopted shared thresholds, with acceptance cases and pending Grok dependencies. All four authoritative contracts retain their bytes.
 
 The next paragraph retains the earlier companion/inactive-test stage; its four-unchanged-contract statement does not describe the later candidate bytes. The v0.3.0 draft adds only two workflow sentences after both limited text checks, without formal adoption or consumer updates. Optional guides remain non-authoritative.
 

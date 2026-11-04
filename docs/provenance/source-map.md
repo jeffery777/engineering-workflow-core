@@ -321,3 +321,13 @@ This packet integrates PR28's optional companions and PR29's #24/#26 candidate w
 接續七案剩餘維護及使用者確認的 Agent／workflow 目標，保留全部舊字，新增正常流程範圍說明及 [v0.3.0 draft 準備紀錄](../releases/v0.3.0.md)。先由 Codex 再 Grok 各自固定 Core9cec 的四契約／382-byte 引文，v3 僅對一案附加批准澄清、十二案 expected 不變；各一次實際12/12及獨立理由通過後，才將相同原字兩句加至 wf-verification。workflow 舊字完整保留，其他三契約／LICENSE／完整 notices equality 不變。這不改原107單位的來源，不以舊九案證明新語義，不接受其他擴張義務或更新 consumer／安裝。
 
 Continue the remaining seven-Issue maintenance under the user-confirmed agent/workflow scope, preserving all old text. Add bounded normal-process guidance and the v0.3.0 draft record. Codex then Grok independently pin Core9cec's four contracts/382-byte quotation; v3 appends the approved clarification to one case with all expected values unchanged. Only after each actual12/12 and independent reasoning PASS insert the exact two sentences in wf-verification. Preserve all original workflow text and exact other contracts/LICENSE/full notices. Do not rewrite the original107-unit provenance, use old nine-case results for new semantics, adopt broader proposals or update consumers/installations.
+
+## 2026-11-04 #23／#22 接續來源／Follow-up sources
+
+依使用者的 Core 接續要求，新增[剩餘需求評估](../maintenance/2026-11-04-issue-22-23-followup.md)及[選用伴讀](../companion/remaining-feedback-cases.md#followup-22-23)，以兩案本文、全部實際留言、Codex #370／#368 的固定來源交付與既有正式契約逐項核對。#22 的 10/30 補充確實存在，#23 沒有該日留言；不倒寫缺少的來源。新增內容為本包的接口無關分析，不移植 Claude／Codex 特定工具或將其能力升格為 Core 義務，既有原107單位、來源 notices 與全部舊字保留。
+
+本包不改四份權威契約、LICENSE 或完整 notices，不建立修改型候選 commit、consumer pin／eval 或新發行。Codex 局部交付不表示 Core #22／#23 完成；Grok 依最新使用者指示暫緩，雙端新門檻仍 pending。新增文件與引用會改完整清冊及 dependency closure，未來採用另驗固定 revision／digest，不沿用舊集合宣稱已包含本包。
+
+Under the user's Core continuation request, add the linked assessment and optional guidance using both Issue bodies, every actual comment, fixed Codex #370/#368 delivery and existing authoritative contracts. #22 has the October 30 supplement; #23 does not. This packet supplies interface-neutral analysis rather than transplanting provider tools or promoting their capabilities into Core duties. Retain the original107 units, source notices and every earlier word.
+
+Preserve all four authoritative contracts, LICENSE and complete notices. Create no modifying-candidate commit, consumer pin/eval or release. Bounded Codex delivery does not complete Core #22/#23; Grok and the new dual-consumer threshold remain pending. Later adoption must verify the changed inventory/reference closure and fixed revision/digests. Old set identities do not cover this addition.
