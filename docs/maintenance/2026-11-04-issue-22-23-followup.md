@@ -1,6 +1,16 @@
 # #22／#23 接續評估／Follow-up assessment
 
+## 後續決策的適用範圍／Later decision scope
+
+本檔原文保留 PR31 的非權威伴讀階段與當時驗收順序。使用者其後將本次 #22／#23 的順序改為 Core 完成自身必要評估、測試與審查後可先採納／發布，Codex 後續採用自行驗證，Grok 驗證與修改暫緩、相容性未知；下方雙端先驗門檻不再是本次 Core 接受的前置。新權威規則與 Core 自身完成條件另見 [上游候選](issue-22-23-upstream-candidate.md)及 [v0.4.0 準備紀錄](../releases/v0.4.0.md)，保留全部舊字不代表沿用已被取代的時點要求，也不代表已取得合併或正式發布的特定授權。
+
+Retain this file's original PR31 companion stage and acceptance order. The user's later #22/#23 decision lets Core adopt/publish after its own required evaluation/tests/review, with Codex validating later adoption and Grok work deferred, compatibility unknown. Earlier dual-consumer-first gates below no longer precede this Core acceptance. The linked upstream candidate and v0.4.0 preparation record define new authority and Core completion. Preserving historical words does not retain superseded timing or grant specific merge/publication authority.
+
 ## 繁體中文
+
+### 後續例外與公開操作授權
+
+使用者後續要求在 [#23 正式候選](../../contracts/review-and-security.md#review-required-read-only)新增特定環境的一次性殘餘風險接受例外，保留必要通道、理由、替代偵測及未涵蓋範圍紀錄，同環境及規則未變不逐次確認，改變須重新接受，偵測受審內容改動使該次審查作廢。下方絕對排除可寫 reviewer 的描述保留早期／預設階段，不代替例外的完整條件；接受不建立技術唯讀或 reviewer 編輯權。使用者已明確授權這次擴充候選的 commit、非破壞性 push、更新現有 draft PR31 及新版本完整 Merge Review，取代下方四檔公開授權的範圍；仍不包含 merge、正式發行或代環境接受風險。
 
 ### 範圍與來源
 
@@ -79,6 +89,10 @@
 本輪交付界線為本機文件與驗證，未執行 commit、push、PR／Issue 寫入、merge、發行或安裝，未改既有公開歷史。兩案保持 open；需要額外授權的公開動作及有實質風險的變更另交具體範圍決定。依 ASD-STE100 原則編寫，尚未完成完整符合性驗證。
 
 ## English
+
+### Later exception and publication authority
+
+The user later requested the authority candidate's one-time environment-specific residual-risk exception, with retained channels, reasons, alternative detection and gaps recorded. Unchanged environments/rules need no repeated confirmation; changes require renewed acceptance, and detected reviewed-content modification invalidates that review. Earlier absolute exclusions retain their default/historical stage. Acceptance establishes neither technical read-only operation nor authority to edit. The user authorized this expanded candidate's commit, non-destructive push, existing draft PR31 update and complete new-version Merge Review, replacing the earlier four-file publication scope. Merge, formal release and accepting risk on an environment's behalf remain excluded.
 
 ### Scope, findings and order
 

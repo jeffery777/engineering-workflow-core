@@ -109,3 +109,17 @@ For #22, enumerate the actual payload, metadata and destination, separating insp
 Use the existing masking format for keys, credentials, confidential material, local accounts, private directories and unnecessary execution records. Publish safe locations/categories only, without raw private values or their guessable hashes. Bounded data inspection is distinct from risk-based formal Security Diff Scan applicability and grants no publication authority.
 
 New shared duties still need matching fixed candidates, each consumer's own pin/eval and applicable real interface evidence. Grok deferral keeps the dual-consumer gate pending. Delivering optional guidance does not complete the original modifying request. Written per ASD-STE100 principles; full conformance is unverified.
+
+<a id="upstream-timing-correction"></a>
+
+## 本次 #22／#23 的上游時點校正／Upstream timing correction
+
+使用者於 2026-11-04 將本次工作改為 Core 先完成自身必要評估、測試與審查，再核對正式採納及發布授權；Codex 後續採用自行驗證，Grok 工作等另行通知。上方雙端先驗門檻及未採納說明保留為當時伴讀／準備階段，不再要求本次 Core 等待下游候選驗證，也不因此宣稱下游相容性已通過；Grok 相容性未知。新增權威文字、Core 自身驗收與版本準備見 [上游候選](../maintenance/issue-22-23-upstream-candidate.md)及 [v0.4.0](../releases/v0.4.0.md)，原資料保護、必要獨立審查、相依停止與操作授權均保留。
+
+On 2026-11-04 the user changed this work to Core's own required evaluation/tests/review before separately authorized adoption/publication, with Codex validating later adoption and Grok work deferred. The earlier dual-consumer-first and unadopted statements retain their companion/preparation stage. They no longer require Core to wait for consumer candidate verification and do not establish consumer compatibility; Grok compatibility remains unknown. The linked upstream candidate and v0.4.0 record cover new authority, Core acceptance and version preparation, preserving data protection, required independent review, dependent stops and operation authority.
+
+## 特定環境接受的後續例外／Later environment-specific exception
+
+本節仍為非權威伴讀；[正式候選](../../contracts/review-and-security.md#review-required-read-only)後續加入使用者要求的具體例外，使上方排除可寫 reviewer 的描述保留為預設／先前階段，不能省略例外的完整條件。必要用途使有效寫入通道無法移除時，使用者可就特定環境一次性接受並記錄通道、理由、替代偵測及未涵蓋範圍；同環境及規則未變可重用，改變須重新接受，偵測到受審內容改動則該次審查作廢。接受或 HEAD／status／diff hash 比對不等於技術禁寫、完整偵測或改動歸因；缺有效接受及必要紀錄仍停止相依 gate。
+
+This remains optional guidance. The authority candidate's later user-requested exception qualifies the earlier writable-reviewer exclusions as default or historical statements. A necessary retained write channel may receive one-time user acceptance for a specific environment, recording channels, reasons, alternative detection and gaps. Reuse requires unchanged environment/rules; changes require renewed acceptance, and detected reviewed-content modification invalidates the review. Acceptance and fingerprints establish neither technical denial, complete detection nor attribution. Missing valid acceptance or required records still blocks dependent gates.

@@ -331,3 +331,27 @@ Continue the remaining seven-Issue maintenance under the user-confirmed agent/wo
 Under the user's Core continuation request, add the linked assessment and optional guidance using both Issue bodies, every actual comment, fixed Codex #370/#368 delivery and existing authoritative contracts. #22 has the October 30 supplement; #23 does not. This packet supplies interface-neutral analysis rather than transplanting provider tools or promoting their capabilities into Core duties. Retain the original107 units, source notices and every earlier word.
 
 Preserve all four authoritative contracts, LICENSE and complete notices. Create no modifying-candidate commit, consumer pin/eval or release. Bounded Codex delivery does not complete Core #22/#23; Grok and the new dual-consumer threshold remain pending. Later adoption must verify the changed inventory/reference closure and fixed revision/digests. Old set identities do not cover this addition.
+
+## 2026-11-04 上游規則與時點新決策／Upstream rule and timing decision
+
+使用者在 PR31 伴讀交付後，釐清 Core 上游完成自身必要評估、測試及審查後可先採納與發布，不須等待 Codex／Grok pin 候選或完成 eval；Codex 在後續採用自行驗證，Grok 工作暫緩、相容性未知。本段記錄本次 #22／#23 新決策的來源及適用範圍，取代該工作先前的雙端先驗時點，不倒寫已完成工作包或當時未執行的驗證。
+
+本包在 [review-and-security](../../contracts/review-and-security.md) 新增接口無關完整句子，覆蓋兩案本文及 #22 10/30 補充的必要 reviewer 有效唯讀資格與公開操作資料檢查，沒有移植 Claude／Codex 專用工具、控制參數或驗證資格。它是原107單位之後的新義務，不是 P1 原字抽取；舊來源、所有原字行序、完整 notices／LICENSE、其他三契約及歷史發行文件保留。需求、早期設計 findings、有限規則案例與驗收邊界見 [上游候選](../maintenance/issue-22-23-upstream-candidate.md)。
+
+依新增義務準備 [v0.4.0](../releases/v0.4.0.md) 與雙語 CHANGELOG，不以伴讀版本或舊 scan／eval 代替權威新差異的審查。Core 是純 Markdown，實際工具控制及下游相容性須由各接口另驗；新清冊、相對引用閉包與 digest 另核。候選、合併、正式 tag／Release 與下游採用各有獨立證據及操作權，不由本段自授權。
+
+After PR31's companion delivery, the user clarified that Core may adopt/publish after its own required evaluation/tests/review without waiting for consumer candidate pins/evals. Codex validates later adoption; Grok is deferred with unknown compatibility. This records the new source and scope for current #22/#23 timing, preserving earlier packets and unrun-check history.
+
+Add interface-neutral complete sentences to review-and-security for required reviewers' effective read-only qualification and publication-data inspection from both Issue bodies and #22's October 30 supplement. Transplant no provider-specific tool, setting or qualification. These are post-P1 duties, not original107-unit extraction. Retain every earlier word/line, source notice/LICENSE, other three contracts and historical releases. The upstream packet records requirements, early design findings, finite cases and acceptance limits.
+
+Prepare v0.4.0 and bilingual CHANGELOG for added duties; companion versions and old scans/evals do not review the new authority diff. Core remains Markdown-only; interfaces verify actual controls and compatibility separately. Recheck the new inventory/reference closure/digests. Candidate, merge, official tag/Release and downstream adoption retain separate evidence and authority.
+
+## #23 特定環境殘餘風險接受／Environment-specific residual-risk acceptance
+
+使用者後續明確要求一次性環境接受例外，並授權擴充候選 commit、非破壞性 push、更新現有 draft PR31 及新版本完整 Merge Review，不包含 merge 或正式發布。依直接要求，在 review-required-read-only 僅新增完整句子，明定必要保留寫入通道的接受紀錄、替代偵測及缺口、同環境／規則重用與變更重新接受、偵測改動作廢及不冒稱技術唯讀。舊預設與全部原字保留，其他必要義務不豁免，這也不是任何環境已取得接受的紀錄。
+
+Claude 固定來源、Bash／比對限制與接受紀錄尚未驗證完成的規劃見[候選補充](../maintenance/issue-22-23-upstream-candidate.md)。不把平台特定 Bash 或 Git 比對命令升格為 Core 必用工具；舊授權／掃描敘述保留歷史，新候選的原字、案例、完整安全評估及新 HEAD 審查另驗。Grok 未啟動、相容性未知，不改寫公開 Git 歷史。
+
+The user's later direct request adds one-time environment-specific acceptance and authorizes the expanded candidate's commit, non-destructive push, existing draft PR31 update and full new-version Merge Review, excluding merge and official release. Add complete sentences only for necessary retained channels, acceptance records, alternative detection/gaps, unchanged-environment/rule reuse, renewed acceptance on change, detected-modification invalidation and no technical-read-only claim. Preserve every earlier word/default and other required duties. This is not an environment's completed acceptance record.
+
+The candidate addendum identifies fixed Claude evidence and its limits; the planned acceptance remains unverified. No provider tool or fingerprint command becomes mandatory Core machinery. Historical authority/scan statements remain; new candidate preservation, cases, full security scope and changed-head review are separately verified. Grok remains untouched with unknown compatibility; rewrite no public Git history.
