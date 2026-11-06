@@ -7,6 +7,14 @@
 <details open>
 <summary>繁體中文（預設展開）</summary>
 
+## 未發行 — #34 共用寫作與兩層讀取
+
+新增[共用寫作契約](contracts/writing.md)，支援一般文章、技術文件及混合文類；[wf-writing](contracts/workflow.md#wf-writing) 保留 anchor、簡短最低要求及完整規範的按需入口。一般交付摘要、紀錄及適當零星修改不自動觸發全文；文件任務與短小但實質影響步驟、風險或重要結論的修改，按內容影響處理。保留其他工程必讀與下游加嚴。
+
+引用既有資料須忠實並列來源，不要求逐項重做實驗；自行研究或效果主張提供相稱的真實資料與方法。STE 給聲明範例並允許等義表達，未完整核對不得宣稱符合，既有較嚴字句要求仍保留。繁中採自然台灣用語；文類特色、精度、必要原文、#23 完整例外與 LICENSE／notices 保持。
+
+這是契約適用及閱讀義務的調整，依下方版本方式應按契約變更評估後續 minor，不沿用 v0.4.1 的 patch 澄清判定。本輪只準備本地實作、驗證與審查，尚未提交或發布，也不改 consumer、安裝或全域設定；[來源與遷移對照](docs/provenance/source-map.md#original-writing-update)及[決策／案例](docs/architecture/original-writing-design.md)記錄範圍。歷史條目保持原文，不由本條回填當時狀態。
+
 ## v0.4.1 — 簡明用語澄清候選
 
 在 [wf-writing](contracts/workflow.md#wf-writing) 只新增完整句子，具體說明既有的讀者、術語及技術精度要求：減少不必要的行話、縮寫、中英混用及名詞連用；保留必要術語，依讀者需要解釋。新增[選用雙語例子](docs/companion/plain-writing-examples.md)，不設禁用詞表、不要求所有文件改為非工程用語，不新增 STE 認證或 gate，也不改安全、授權、審查或 #23 例外。
@@ -90,6 +98,14 @@ Core 的文件版本由本檔已提交的版本條目記錄，採 `vMAJOR.MINOR.
 
 <details>
 <summary>English (expand to read)</summary>
+
+## Unreleased — #34 shared writing and conditional reading
+
+Add a [shared writing contract](contracts/writing.md) for general articles, technical documents and mixed genres. Keep the [wf-writing](contracts/workflow.md#wf-writing) anchor, short minimum requirements and a conditional entry to the full contract. Routine delivery summaries, records and suitable minor edits do not automatically load it. Judge document tasks and short substantive changes to steps, risks or important conclusions by their effect. Retain other required engineering reading and stricter consumer rules.
+
+Cite existing material faithfully without requiring each experiment to be repeated. Support the author's own research or claimed effects with proportionate real data and methods. Provide STE notice examples and allow equivalent wording, without claiming full conformance before complete checks or removing stricter notice requirements. Keep natural Taiwan Traditional Chinese, genre, precision, required original text, the full #23 exception, LICENSE and notices.
+
+This changes contract scope and reading duties. Assess a later minor under the version policy rather than reusing the v0.4.1 patch-clarification decision. This packet prepares local implementation, verification and review only; it proves no commit or publication and changes no consumer, installation or global setting. The [source and migration map](docs/provenance/source-map.md#original-writing-update) and [decision/cases](docs/architecture/original-writing-design.md) record scope. Preserve historical entries without backfilling their states.
 
 ## v0.4.1 — Plain-wording clarification candidate
 
