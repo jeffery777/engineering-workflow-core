@@ -7,6 +7,14 @@
 <details open>
 <summary>繁體中文（預設展開）</summary>
 
+## v0.5.0 — 共用寫作契約發行準備
+
+依 [#36](https://github.com/jeffery777/engineering-workflow-core/issues/36) 準備 minor v0.5.0，納入已合併 [#34／PR #35](https://github.com/jeffery777/engineering-workflow-core/pull/35) 的[共用寫作契約](contracts/writing.md)與兩層讀取：一般文章、技術文件及混合文類共用完整規範，工程摘要保留簡短最低要求；文件任務與實質短修改按影響讀取全文。保留引用與自行研究的區分、台灣繁中用語、STE 未完成完整符合性驗證的限制及下游加嚴。
+
+相較 v0.4.1，這是契約適用與閱讀義務的變更，不是 patch 澄清。本發行準備切片只新增本版本條目與 [v0.5.0 準備紀錄](docs/releases/v0.5.0.md)，不再修改 #34 合併基線的五份契約、#23 完整例外、LICENSE、notices 或其他既有文件。舊條目及其原文／行序保留為點時歷史。
+
+本條目記錄來源版本與準備範圍，不證明 tag／Release 已發布。發行內容、清冊、metadata 及驗收另依準備紀錄核對；publication 由新的 annotated tag、解析後完整 commit 與 GitHub 正式 Release 證明，不回填準備紀錄。Core 與 consumer 各自管理版本，本包不改下游、安裝或全域設定，也不證明 runtime 已遵循。
+
 ## 未發行 — #34 共用寫作與兩層讀取
 
 新增[共用寫作契約](contracts/writing.md)，支援一般文章、技術文件及混合文類；[wf-writing](contracts/workflow.md#wf-writing) 保留 anchor、簡短最低要求及完整規範的按需入口。一般交付摘要、紀錄及適當零星修改不自動觸發全文；文件任務與短小但實質影響步驟、風險或重要結論的修改，按內容影響處理。保留其他工程必讀與下游加嚴。
@@ -98,6 +106,14 @@ Core 的文件版本由本檔已提交的版本條目記錄，採 `vMAJOR.MINOR.
 
 <details>
 <summary>English (expand to read)</summary>
+
+## v0.5.0 — Shared-writing release preparation
+
+Prepare minor v0.5.0 under [#36](https://github.com/jeffery777/engineering-workflow-core/issues/36), including the [shared writing contract](contracts/writing.md) and conditional reading merged in [#34 / PR #35](https://github.com/jeffery777/engineering-workflow-core/pull/35). General articles, technical documents and mixed genres share the full contract. Routine engineering summaries retain short minimum requirements; document tasks and substantive short changes load the full text by their effect. Keep the distinction between cited material and the author's own research, Taiwan Traditional Chinese, unverified full STE conformance, and stricter downstream requirements.
+
+Compared with v0.4.1, this changes contract scope and reading duties rather than providing a patch clarification. This release-preparation slice adds only these version entries and the [v0.5.0 preparation record](docs/releases/v0.5.0.md). It does not further change the five contracts, complete #23 exception, LICENSE, notices or other documents from the #34 merge baseline. Preserve earlier entries, raw text and order as point-in-time history.
+
+These entries record the source version and preparation scope, not published tags or Releases. Check release content, inventory, metadata and acceptance as the preparation record describes. Publication truth comes from the new annotated tag, its resolved full commit and the formal GitHub Release; do not backfill the preparation record. Core and consumers manage versions independently. This packet changes no downstream source, installation or global setting and proves no runtime conformance.
 
 ## Unreleased — #34 shared writing and conditional reading
 
