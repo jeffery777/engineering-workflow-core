@@ -395,3 +395,20 @@ The user approved option B and the two reading layers for local implementation a
 This independent design uses user requirements and existing Core v0.4.1 writing duties, not protected expression from the named reference repository. The map above preserves the old reader/depth, actor/order/terms, safety/precision, STE, Traditional Chinese/bilingual/literal and review duties in their new locations. Equivalent STE notices retain the unverified-full-conformance meaning and stricter downstream requirements. No complete standards check is claimed. New material is not original P1 extraction; source revisions, hashes and complete notices remain.
 
 Only wf-writing may be replaced; retain its anchor, all bytes outside it and the other three contracts including the full #23 exception. Add bilingual README/CHANGELOG guidance and this source-map section while retaining earlier text and order. Keep LICENSE, full notices and all other existing files. The expected inventory becomes 29 Markdown files plus LICENSE. Later consumer adoption must verify fixed identity, inventory, digests, complete closure, sources, notices and conditional loading; assembly closure is not mandatory reading on every task. No runtime mechanism, consumer update or publication is established.
+
+<a id="reviewer-route-dispatch-update"></a>
+
+## #38／#40 reviewer 路徑與各次委派證據／Reviewer routes and dispatch evidence
+
+來源是 [#38](https://github.com/jeffery777/engineering-workflow-core/issues/38)、[#40](https://github.com/jeffery777/engineering-workflow-core/issues/40) 的使用端回饋，以及對照 [v0.5.0 固定基線](https://github.com/jeffery777/engineering-workflow-core/tree/0edcbad3d126cb8a7c0b64e9ad95283e2cca635e) 後選定的窄幅方案。Issue 提案本身不授權修改；本工作包依本次已確認的實作方向，只增加下列文字與[非權威案例](../companion/reviewer-route-and-dispatch-evidence.md)。
+
+| 需求 | 正式文字位置 | 保留條件與驗收範圍 |
+| --- | --- | --- |
+| #38：reviewer 路徑的意義 | [review-required-read-only](../../contracts/review-and-security.md#review-required-read-only) 新增定義 | 實際 reviewer／定義、派送介面、有效工具／權限；不以檔案位置替代環境或接受範圍判定；#23 全部例外原文保留，名稱改變不一律要求重取接受 |
+| #40：各次核對與證據重用 | [wf-delegation](../../contracts/workflow.md#wf-delegation) 新增兩段，承接 [wf-capability](../../contracts/workflow.md#wf-capability) | 每次核對不等於重新探測；查本次設定、繼承／覆寫與漂移；區分未讀、讀取受限／失敗、不可觀察及 requested／recorded／effective；unknown 不免除必要資格 |
+
+契約是單一權威來源，伴讀只示意判讀，不新增規則、探測器、固定 model／effort、gate 或通用 receipt。既有 anchors、所有舊行／順序、#23 完整例外、其他三份契約、歷史文件、LICENSE 與完整 notices 保留。這不回溯判定 consumer 的既有審查，也不證明任何 runtime 已遵循；各 consumer 另核固定版本、清冊／digest／引用閉包及受影響遵循驗證。#39 保留 M1 PoC 前提，不在本包定案跨接口條文或啟用資料傳送；不重做 #22／#23／#32 的行政結案。
+
+Sources are consumer feedback in Issues #38 and #40, compared against the fixed v0.5.0 baseline above. Feedback alone grants no change authority. The selected packet adds the route definition to review-required-read-only and two evidence paragraphs to wf-delegation, using wf-capability's reuse conditions. The table maps each Issue separately. The companion is non-authoritative and its cases are hypothetical, not runtime tests.
+
+Retain all existing anchors, lines and order, the complete #23 exception, the other three contracts, historical documents, LICENSE and full notices. The directory alone does not establish acceptance applicability; a model-name change alone does not require renewed acceptance. Check each dispatch with applicable evidence, distinguish inheritance/overrides and drift, and keep unread, failed/restricted and unobservable evidence separate. Requested and recorded values do not automatically prove effective values; unknown grants no qualification exemption. Add no detector, fixed model/effort, per-dispatch probe, gate or general receipt. Later consumer pinning and conformance checks remain separate. This packet neither judges earlier consumer reviews nor proves runtime behavior, enables cross-interface transfer or closes old Issues. Issue #39 remains pending M1 PoC evidence.
