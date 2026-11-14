@@ -7,6 +7,12 @@
 <details open>
 <summary>繁體中文（預設展開）</summary>
 
+## 未發行 — #38 reviewer 路徑與 #40 各次委派證據
+
+[#38](https://github.com/jeffery777/engineering-workflow-core/issues/38) 在 [review-required-read-only](contracts/review-and-security.md#review-required-read-only) 定義實際 reviewer 路徑，區分檔案位置與執行環境，保留 #23 完整接受機制及適用界線。[#40](https://github.com/jeffery777/engineering-workflow-core/issues/40) 在 [wf-delegation](contracts/workflow.md#wf-delegation) 明確各次核對、有效證據重用、繼承／覆寫、漂移、未讀與不可觀察，以及 requested／recorded／effective 的來源層次。
+
+[選用案例](docs/companion/reviewer-route-and-dispatch-evidence.md)及[來源處置](docs/provenance/source-map.md#reviewer-route-dispatch-update)分列兩件 Issue 的範圍。這是未發行的文件更新，不證明發布或 runtime 遵循；不新增每次探測、固定模型／effort、gate、通用 receipt 或資格豁免。#39 留待 M1 PoC，不納入本包；其他契約、全部舊行、歷史、LICENSE 與 notices 保留，下游採用及安裝另行處理。
+
 ## v0.5.0 — 共用寫作契約發行準備
 
 依 [#36](https://github.com/jeffery777/engineering-workflow-core/issues/36) 準備 minor v0.5.0，納入已合併 [#34／PR #35](https://github.com/jeffery777/engineering-workflow-core/pull/35) 的[共用寫作契約](contracts/writing.md)與兩層讀取：一般文章、技術文件及混合文類共用完整規範，工程摘要保留簡短最低要求；文件任務與實質短修改按影響讀取全文。保留引用與自行研究的區分、台灣繁中用語、STE 未完成完整符合性驗證的限制及下游加嚴。
@@ -106,6 +112,12 @@ Core 的文件版本由本檔已提交的版本條目記錄，採 `vMAJOR.MINOR.
 
 <details>
 <summary>English (expand to read)</summary>
+
+## Unreleased — #38 reviewer routes and #40 dispatch evidence
+
+[Issue #38](https://github.com/jeffery777/engineering-workflow-core/issues/38) defines the actual reviewer route under [review-required-read-only](contracts/review-and-security.md#review-required-read-only), separating file location and execution environment while retaining the complete #23 acceptance mechanism and its limits. [Issue #40](https://github.com/jeffery777/engineering-workflow-core/issues/40) clarifies each-dispatch checks, valid evidence reuse, inheritance/overrides, drift, unread versus unobservable evidence, and requested/recorded/effective layers under [wf-delegation](contracts/workflow.md#wf-delegation).
+
+[Optional cases](docs/companion/reviewer-route-and-dispatch-evidence.md) and the [source map](docs/provenance/source-map.md#reviewer-route-dispatch-update) keep the two scopes traceable. This is an unreleased documentation update, not publication or runtime conformance evidence. It adds no per-dispatch probe, fixed model/effort, gate, general receipt or qualification exemption. Issue #39 remains outside this packet pending M1 PoC evidence. Retain other contracts, every earlier line, history, LICENSE and full notices; consumer adoption and installation remain separate.
 
 ## v0.5.0 — Shared-writing release preparation
 
